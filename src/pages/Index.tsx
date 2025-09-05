@@ -100,6 +100,13 @@ const Index = () => {
       <div className="relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-green-500/10 to-blue-500/10"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 sm:pt-16 lg:pt-20 pb-16 sm:pb-24 lg:pb-32">
+          {/* Premium Button */}
+          <div className="absolute top-4 right-4 sm:top-6 sm:right-6 lg:top-8 lg:right-8">
+            <a href="/premium" className="bg-gradient-to-r from-green-500 to-blue-500 hover:from-green-600 hover:to-blue-600 text-white px-4 py-2 rounded-lg font-semibold text-sm transition-all duration-300">
+              Premium
+            </a>
+          </div>
+          
           <div className="text-center">
             <div className="flex justify-center mb-4 sm:mb-6 lg:mb-8">
               <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold bg-gradient-to-r from-green-400 to-blue-500 bg-clip-text text-transparent">
@@ -271,13 +278,25 @@ const Index = () => {
       {/* Footer */}
       <footer className="bg-slate-900 py-8 sm:py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col md:flex-row justify-between items-center">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="flex items-center gap-3 mb-4 md:mb-0">
               <span className="text-xl sm:text-2xl font-bold bg-gradient-to-r from-green-400 to-blue-500 bg-clip-text text-transparent">SnapFare</span>
             </div>
-            <p className="text-gray-400 text-xs sm:text-sm text-center">
-              © 2025 SnapFare. Alle Rechte vorbehalten.
-            </p>
+            
+            <div className="flex flex-col sm:flex-row items-center gap-4 text-center">
+              <div className="flex gap-6 text-sm">
+                <a href="/impressum" className="text-gray-400 hover:text-white transition-colors">
+                  Impressum
+                </a>
+                <a href="/datenschutz" className="text-gray-400 hover:text-white transition-colors">
+                  Datenschutzerklärung
+                </a>
+              </div>
+              
+              <p className="text-gray-400 text-xs sm:text-sm">
+                © 2025 SnapFare. Alle Rechte vorbehalten.
+              </p>
+            </div>
           </div>
         </div>
       </footer>

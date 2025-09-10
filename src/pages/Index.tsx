@@ -114,6 +114,8 @@ const Index = () => {
     "Flugdeals direkt in deine Inbox",
     "Preisüberwachung deiner Lieblingsdeals",
     "Automatisierter Buchungsprozess",
+    "Premium: Businessdeals Langstrecke",
+    "Premium: Meilenschnäppchen ab Europa"
   ];
 
   return (

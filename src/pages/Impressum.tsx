@@ -15,10 +15,9 @@ const Impressum = () => {
               <section className="mb-8">
                 <h2 className="text-2xl font-semibold mb-4 text-white">Verantwortlich</h2>
                 <div className="text-gray-300 leading-relaxed">
-                  <p className="font-semibold">SnapFare / Basics-DB (Einzelfirma)</p>
+                  <p className="font-semibold">Basics by Dominic Bachmann (Einzelfirma)</p>
                   <p>Dominic Bachmann</p>
-                  <p>Musterstrasse 12</p>
-                  <p>8000 Zürich</p>
+                  <p>8123 Ebmatingen</p>
                   <p>Schweiz</p>
                 </div>
               </section>
@@ -26,15 +25,15 @@ const Impressum = () => {
               <section className="mb-8">
                 <h2 className="text-2xl font-semibold mb-4 text-white">Kontakt</h2>
                 <p className="text-gray-300">
-                  E-Mail: <a href="mailto:contact@snapfare.ch" className="text-green-400 hover:text-green-300 transition-colors">contact@snapfare.ch</a>
+                  E-Mail: <a href="mailto:contact@basics-db.ch" className="text-green-400 hover:text-green-300 transition-colors">contact@basics-db.ch</a>
                 </p>
               </section>
 
               <section className="mb-8">
                 <h2 className="text-2xl font-semibold mb-4 text-white">Unternehmensangaben</h2>
                 <div className="text-gray-300">
-                  <p>Handelsregistereintrag: [Nummer/Amtsstelle einsetzen]</p>
-                  <p>UID: CHE-[einsetzen]</p>
+                  <p>Handelsregistereintrag: Handelsregisteramt des Kantons Zürich</p>
+                  <p>UID: CHE-232.274.979</p>
                 </div>
               </section>
 

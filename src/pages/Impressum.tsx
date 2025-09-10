@@ -32,7 +32,7 @@ const Impressum = () => {
               <section className="mb-8">
                 <h2 className="text-2xl font-semibold mb-4 text-white">Unternehmensangaben</h2>
                 <div className="text-gray-300">
-                  <p>Handelsregistereintrag: Handelsregisteramt des Kantons Zürich</p>
+                  <p>Handelsregisteramt des Kantons Zürich</p>
                   <p>UID: CHE-232.274.979</p>
                 </div>
               </section>

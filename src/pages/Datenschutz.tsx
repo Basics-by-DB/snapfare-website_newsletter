@@ -13,20 +13,19 @@ const Datenschutz = () => {
               </p>
 
               <section className="mb-8">
-                <h2 className="text-2xl font-semibold mb-4 text-white">1. Verantwortlicher</h2>
-                <ul className="space-y-2 text-gray-300 leading-relaxed pl-6">
-                  <li className="font-semibold">Basics by Dominic Bachmann (Einzelfirma)</li>
-                  <li>Dominic Bachmann, 8123 Ebmatingen, Zürich, Schweiz</li>
-                  <li>
-                    E-Mail:{" "}
-                    <a
-                      href="mailto:contact@basics-db.ch"
-                      className="text-green-400 hover:text-green-300 transition-colors"
-                    >
-                      contact@basics-db.ch
-                    </a>
-                  </li>
+                <h2 className="text-2xl font-semibold mb-4 text-white">
+                  5. Empfänger & Auftragsbearbeiter (Drittanbieter)
+                </h2>
+                <ul className="list-disc list-inside space-y-2 text-gray-300 leading-relaxed">
+                  <li><strong>Newsletter:</strong> EmailOctopus (Versand, Öffnungs-/Klickmessung)</li>
+                  <li><strong>Datenbank/Backend:</strong> Supabase (Subscriber- und Payment-Daten; „Drittanbieter-Hosting")</li>
+                  <li><strong>Zahlungen:</strong> TWINT Business und Payrexx (Abwicklung; Datenspeicherung auf sicheren Servern in CH/EU gemäss deren Datenschutzangaben)</li>
+                  <li><strong>Analytics:</strong> Google Analytics (Web-Tracking; IP-Anonymisierung/verkürzte IP, Opt-Out-Möglichkeit)</li>
+                  <li>Weitere Dienstleister im Rahmen von Support, Wartung und Hosting</li>
                 </ul>
+                <p className="text-gray-400 text-sm mt-4">
+                  Hinweis: EDÖB betont transparente Datenschutzerklärungen; Zahlungsdienstleister wie TWINT/Payrexx verarbeiten Daten gemäss eigenen Richtlinien und CH/EU-Standards.
+                </p>
               </section>
 
               <section className="mb-8">

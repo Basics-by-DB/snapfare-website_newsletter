@@ -46,6 +46,19 @@ const Index = () => {
         throw error;
       }
       
+      // Send confirmation email
+      try {
+        await supabase.functions.invoke('send-confirmation-email', {
+          body: { 
+            email: email.trim().toLowerCase(),
+            location: userLocation 
+          }
+        });
+      } catch (emailError) {
+        console.error('Email sending error (non-blocking):', emailError);
+        // Don't block the success flow if email fails
+      }
+      
       toast({
         title: "Erfolgreich angemeldet! 🎉",
         description: "Du hast es geschafft - wir werden dir bald weitere Informationen zukommen lassen.",

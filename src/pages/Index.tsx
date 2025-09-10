@@ -113,7 +113,7 @@ const Index = () => {
   const benefits = [
     "Flugdeals direkt in deine Inbox",
     "Preisüberwachung deiner Lieblingsdeals",
-    "Automatisierter Buchungsprozess ohne Stress",
+    "Automatisierter Buchungsprozess",
   ];
 
   return (
@@ -288,7 +288,7 @@ const Index = () => {
                   <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-white"></div>
                 ) : (
                   <>
-                    Warteliste beitreten <Plane className="ml-2 h-4 w-4" />
+                    Anmelden! <Plane className="ml-2 h-4 w-4" />
                   </>
                 )}
               </Button>

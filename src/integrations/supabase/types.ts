@@ -105,7 +105,17 @@ export type Database = {
       [_ in never]: never
     }
     Functions: {
-      [_ in never]: never
+      insert_payment_pending: {
+        Args: { p_email: string }
+        Returns: {
+          amount_cents: number | null
+          created_at: string
+          currency: string | null
+          email: string
+          id: number
+          status: string | null
+        }
+      }
     }
     Enums: {
       subscriber_status: "active" | "unsubscribed"

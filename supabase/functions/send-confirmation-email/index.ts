@@ -71,15 +71,15 @@ const handler = async (req: Request): Promise<Response> => {
               <h2 style="color: #1e293b; font-size: 24px; font-weight: 600; margin: 0 0 20px 0;">Willkommen an Bord! 🚀</h2>
               
               <p style="color: #475569; font-size: 16px; line-height: 1.6; margin: 0 0 20px 0;">
-                Vielen Dank für deine Anmeldung zur SnapFare Warteliste! Du bist jetzt offiziell dabei und gehörst zu den ersten, die von unserer vollautomatisierten Flugdeal-Revolution profitieren werden.
+                Vielen Dank für deine Anmeldung bei SnapFare! Du bist jetzt offiziell dabei und gehörst zu den ersten, die von unserer kostenlosen vollautomatisierten Flugdeal-Revolution profitieren werden.
               </p>
               
               <div style="background: linear-gradient(135deg, #f0fdf4 0%, #eff6ff 100%); border-radius: 8px; padding: 25px; margin: 25px 0;">
                 <h3 style="color: #047857; font-size: 18px; font-weight: 600; margin: 0 0 15px 0;">Was passiert als nächstes?</h3>
                 <ul style="color: #374151; font-size: 14px; line-height: 1.6; margin: 0; padding-left: 20px;">
-                  <li style="margin-bottom: 8px;">🔍 Wir perfektionieren unseren Deal-Radar für den Launch</li>
-                  <li style="margin-bottom: 8px;">📱 Du erhältst eine persönliche Einladung sobald SnapFare verfügbar ist</li>
-                  <li style="margin-bottom: 8px;">🎯 Als Early-Access-Nutzer bekommst du exklusive Vorteile</li>
+                  <li style="margin-bottom: 8px;">🔍 Wir schicken dir alle zwei Wochen einen Newsletter mit den besten Deals</li>
+                  <li style="margin-bottom: 8px;">📱 Du erhältst eine persönliche Einladung sobald die personalisierte Flugsuche verfügbar ist</li>
+                  <li style="margin-bottom: 8px;">🎯 Als Premium-Nutzer bekommst du zudem Business- und Meilendeals ab der Schweiz</li>
                   <li>💰 Spare dir ab Tag 1 hunderte Franken bei deinen Flugbuchungen</li>
                 </ul>
               </div>
@@ -91,8 +91,8 @@ const handler = async (req: Request): Promise<Response> => {
               ` : ''}
               
               <div style="background-color: #1e293b; border-radius: 8px; padding: 25px; margin: 30px 0; text-align: center;">
-                <h3 style="color: #ffffff; font-size: 16px; font-weight: 600; margin: 0 0 10px 0;">Halte Ausschau nach unserem Launch!</h3>
-                <p style="color: #cbd5e1; font-size: 14px; margin: 0;">Wir melden uns bald mit exklusiven Updates und deinem persönlichen Zugang.</p>
+                <h3 style="color: #ffffff; font-size: 16px; font-weight: 600; margin: 0 0 10px 0;">Halte Ausschau nach dem SnapFare Newsletter!</h3>
+                <p style="color: #cbd5e1; font-size: 14px; margin: 0;">Wir melden uns bald mit weiteren exklusiven Updates und deinem persönlichen Zugang.</p>
               </div>
               
               <p style="color: #475569; font-size: 16px; line-height: 1.6; margin: 25px 0 0 0;">

@@ -9,7 +9,12 @@ const Header = () => {
           SnapFare
         </Link>
         
-        <nav className="flex items-center gap-6">
+        <nav className="flex items-center gap-4">
+          <Link to="/auth">
+            <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground font-semibold px-6">
+              Anmelden
+            </Button>
+          </Link>
           <Link to="/premium">
             <Button variant="default" className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-6">
               Premium

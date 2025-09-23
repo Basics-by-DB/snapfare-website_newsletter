@@ -12,10 +12,10 @@ import { useToast } from "@/hooks/use-toast";
 import { supabase } from "@/integrations/supabase/client";
 import { User, Session } from '@supabase/supabase-js';
 import { useNavigate } from 'react-router-dom';
-import { CalendarIcon, Plane, LogOut, User as UserIcon } from 'lucide-react';
+import { CalendarIcon, Plane, LogOut, User as UserIcon, ArrowLeft } from 'lucide-react';
 import { format } from 'date-fns';
 import { de } from 'date-fns/locale';
-import Header from '@/components/Header';
+import { Link } from 'react-router-dom';
 
 const Dashboard = () => {
   const [user, setUser] = useState<User | null>(null);
@@ -122,46 +122,51 @@ const Dashboard = () => {
 
   if (isLoading) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-background via-background to-muted">
-        <Header />
+      <div className="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50">
         <div className="flex items-center justify-center min-h-screen">
-          <div className="text-center">Laden...</div>
+          <div className="text-center text-gray-600">Laden...</div>
         </div>
       </div>
     );
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-background via-background to-muted">
-      <Header />
-      
-      <div className="container mx-auto px-6 py-24">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50">
+      <div className="container mx-auto px-6 py-8">
+        {/* Back to Home Button */}
+        <div className="mb-6">
+          <Link to="/" className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 font-medium">
+            <ArrowLeft className="w-4 h-4" />
+            Zurück zur Hauptseite
+          </Link>
+        </div>
+
         {/* User Info Header */}
         <div className="mb-8 flex items-center justify-between">
           <div className="flex items-center gap-4">
-            <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
-              <UserIcon className="w-6 h-6 text-primary-foreground" />
+            <div className="w-12 h-12 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full flex items-center justify-center">
+              <UserIcon className="w-6 h-6 text-white" />
             </div>
             <div>
               <h1 className="text-2xl font-bold">Willkommen zurück!</h1>
-              <p className="text-muted-foreground">{user?.email}</p>
+              <p className="text-gray-600">{user?.email}</p>
             </div>
           </div>
           
-          <Button variant="outline" onClick={handleSignOut} className="flex items-center gap-2">
+          <Button variant="outline" onClick={handleSignOut} className="flex items-center gap-2 border-gray-300 text-gray-700 hover:bg-gray-50">
             <LogOut className="w-4 h-4" />
             Abmelden
           </Button>
         </div>
 
         {/* Flight Preferences */}
-        <Card className="max-w-4xl mx-auto">
+        <Card className="max-w-4xl mx-auto shadow-xl border-0 bg-white/90 backdrop-blur-sm">
           <CardHeader>
-            <CardTitle className="flex items-center gap-2">
-              <Plane className="w-6 h-6" />
+            <CardTitle className="flex items-center gap-2 text-gray-800">
+              <Plane className="w-6 h-6 text-blue-600" />
               Ihre Flugpräferenzen
             </CardTitle>
-            <CardDescription>
+            <CardDescription className="text-gray-600">
               Geben Sie Ihre Reisepräferenzen an, um personalisierte Flugdeals zu erhalten.
             </CardDescription>
           </CardHeader>
@@ -297,7 +302,7 @@ const Dashboard = () => {
               <Button 
                 onClick={handleSavePreferences}
                 disabled={isSaving}
-                className="w-full"
+                className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold py-3"
                 size="lg"
               >
                 {isSaving ? "Speichern..." : "Präferenzen speichern"}

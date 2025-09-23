@@ -138,23 +138,23 @@ const Auth = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-background via-background to-muted">
-      <Header />
-      
-      <div className="flex items-center justify-center min-h-screen pt-20 px-4">
-        <Card className="w-full max-w-md">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50">
+      <div className="flex items-center justify-center min-h-screen px-4">
+        <Card className="w-full max-w-md shadow-xl border-0 bg-white/90 backdrop-blur-sm">
           <CardHeader className="text-center">
-            <CardTitle className="text-2xl font-bold">SnapFare</CardTitle>
-            <CardDescription>
+            <CardTitle className="text-3xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-blue-800 bg-clip-text text-transparent">
+              SnapFare
+            </CardTitle>
+            <CardDescription className="text-gray-600">
               Registrieren Sie sich oder melden Sie sich an, um Ihre persönlichen Flugpräferenzen zu verwalten.
             </CardDescription>
           </CardHeader>
           
           <CardContent>
             <Tabs defaultValue="login" className="w-full">
-              <TabsList className="grid w-full grid-cols-2">
-                <TabsTrigger value="login">Anmelden</TabsTrigger>
-                <TabsTrigger value="register">Registrieren</TabsTrigger>
+              <TabsList className="grid w-full grid-cols-2 bg-gray-100">
+                <TabsTrigger value="login" className="data-[state=active]:bg-white data-[state=active]:text-blue-600">Anmelden</TabsTrigger>
+                <TabsTrigger value="register" className="data-[state=active]:bg-white data-[state=active]:text-blue-600">Registrieren</TabsTrigger>
               </TabsList>
               
               <TabsContent value="login" className="space-y-4">
@@ -185,7 +185,7 @@ const Auth = () => {
                   
                   <Button 
                     type="submit" 
-                    className="w-full"
+                    className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold py-2.5"
                     disabled={isLoading}
                   >
                     {isLoading ? "Anmelden..." : "Anmelden"}
@@ -235,7 +235,7 @@ const Auth = () => {
                   
                   <Button 
                     type="submit" 
-                    className="w-full"
+                    className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold py-2.5"
                     disabled={isLoading}
                   >
                     {isLoading ? "Registrieren..." : "Registrieren"}
@@ -244,7 +244,7 @@ const Auth = () => {
               </TabsContent>
             </Tabs>
             
-            <div className="mt-6 text-center text-sm text-muted-foreground">
+            <div className="mt-6 text-center text-sm text-gray-500">
               <p>
                 Bereits auf der Warteliste? Verwenden Sie die gleiche E-Mail-Adresse und setzen Sie hier Ihr Passwort.
               </p>

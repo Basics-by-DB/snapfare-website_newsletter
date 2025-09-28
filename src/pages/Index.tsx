@@ -177,56 +177,83 @@ const Index = () => {
 
             {/* Flight Deals Section */}
             <div className="max-w-5xl mx-auto px-4">
-              <h3 className="text-xl sm:text-2xl font-semibold text-center text-white mb-8">
-                Melde dich jetzt an, um solche Flugdeals ab der Schweiz direkt in deiner Inbox zu erhalten
+              <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-center text-white mb-8 sm:mb-12">
+                Melde dich jetzt an, um solche <span className="text-green-400">Flugdeals ab der Schweiz</span> direkt in deiner Inbox zu erhalten
               </h3>
               
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
                 {/* Deal 1 */}
                 <div className="bg-white/10 border border-white/20 rounded-lg p-6 aspect-square flex flex-col justify-between hover:bg-white/15 transition-all duration-300">
                   <div>
-                    <div className="flex items-center justify-between mb-4">
-                      <span className="text-lg font-semibold text-white">ZUR</span>
-                      <ArrowRight className="h-5 w-5 text-green-400" />
-                      <span className="text-lg font-semibold text-white">BKK</span>
+                    <div className="flex items-center justify-center gap-3 mb-4">
+                      <span className="text-xl font-bold text-white">ZUR</span>
+                      <ArrowRight className="h-6 w-6 text-green-400" />
+                      <span className="text-xl font-bold text-white">BKK</span>
                     </div>
-                    <div className="text-sm text-gray-300 mb-2">Swiss International</div>
+                    <div className="text-center mb-4">
+                      <div className="text-sm text-gray-300 mb-1">Swiss International Air Lines</div>
+                      <div className="text-xs text-gray-400">Direktflug • Economy</div>
+                    </div>
+                    <div className="text-center mb-3">
+                      <div className="text-sm text-gray-300 mb-1">Reisedaten</div>
+                      <div className="text-sm font-semibold text-white">15. März - 29. März 2025</div>
+                      <div className="text-xs text-gray-400">14 Tage</div>
+                    </div>
                   </div>
-                  <div>
-                    <div className="text-sm text-gray-400 mb-1">15. - 29. März 2025</div>
-                    <div className="text-2xl font-bold text-green-400">CHF 687</div>
+                  <div className="text-center">
+                    <div className="text-xs text-gray-400 mb-1">Preis pro Person</div>
+                    <div className="text-3xl font-bold text-green-400">CHF 687</div>
+                    <div className="text-xs text-gray-400">inkl. Steuern & Gebühren</div>
                   </div>
                 </div>
 
                 {/* Deal 2 */}
                 <div className="bg-white/10 border border-white/20 rounded-lg p-6 aspect-square flex flex-col justify-between hover:bg-white/15 transition-all duration-300">
                   <div>
-                    <div className="flex items-center justify-between mb-4">
-                      <span className="text-lg font-semibold text-white">GVA</span>
-                      <ArrowRight className="h-5 w-5 text-green-400" />
-                      <span className="text-lg font-semibold text-white">LAX</span>
+                    <div className="flex items-center justify-center gap-3 mb-4">
+                      <span className="text-xl font-bold text-white">GVA</span>
+                      <ArrowRight className="h-6 w-6 text-green-400" />
+                      <span className="text-xl font-bold text-white">LAX</span>
                     </div>
-                    <div className="text-sm text-gray-300 mb-2">Lufthansa</div>
+                    <div className="text-center mb-4">
+                      <div className="text-sm text-gray-300 mb-1">Lufthansa</div>
+                      <div className="text-xs text-gray-400">1 Stopp • Economy</div>
+                    </div>
+                    <div className="text-center mb-3">
+                      <div className="text-sm text-gray-300 mb-1">Reisedaten</div>
+                      <div className="text-sm font-semibold text-white">8. April - 22. April 2025</div>
+                      <div className="text-xs text-gray-400">14 Tage</div>
+                    </div>
                   </div>
-                  <div>
-                    <div className="text-sm text-gray-400 mb-1">8. - 22. April 2025</div>
-                    <div className="text-2xl font-bold text-green-400">CHF 542</div>
+                  <div className="text-center">
+                    <div className="text-xs text-gray-400 mb-1">Preis pro Person</div>
+                    <div className="text-3xl font-bold text-green-400">CHF 542</div>
+                    <div className="text-xs text-gray-400">inkl. Steuern & Gebühren</div>
                   </div>
                 </div>
 
                 {/* Deal 3 */}
                 <div className="bg-white/10 border border-white/20 rounded-lg p-6 aspect-square flex flex-col justify-between hover:bg-white/15 transition-all duration-300">
                   <div>
-                    <div className="flex items-center justify-between mb-4">
-                      <span className="text-lg font-semibold text-white">BSL</span>
-                      <ArrowRight className="h-5 w-5 text-green-400" />
-                      <span className="text-lg font-semibold text-white">NRT</span>
+                    <div className="flex items-center justify-center gap-3 mb-4">
+                      <span className="text-xl font-bold text-white">BSL</span>
+                      <ArrowRight className="h-6 w-6 text-green-400" />
+                      <span className="text-xl font-bold text-white">NRT</span>
                     </div>
-                    <div className="text-sm text-gray-300 mb-2">ANA</div>
+                    <div className="text-center mb-4">
+                      <div className="text-sm text-gray-300 mb-1">ANA (All Nippon Airways)</div>
+                      <div className="text-xs text-gray-400">1 Stopp • Economy</div>
+                    </div>
+                    <div className="text-center mb-3">
+                      <div className="text-sm text-gray-300 mb-1">Reisedaten</div>
+                      <div className="text-sm font-semibold text-white">12. Mai - 26. Mai 2025</div>
+                      <div className="text-xs text-gray-400">14 Tage</div>
+                    </div>
                   </div>
-                  <div>
-                    <div className="text-sm text-gray-400 mb-1">12. - 26. Mai 2025</div>
-                    <div className="text-2xl font-bold text-green-400">CHF 798</div>
+                  <div className="text-center">
+                    <div className="text-xs text-gray-400 mb-1">Preis pro Person</div>
+                    <div className="text-3xl font-bold text-green-400">CHF 798</div>
+                    <div className="text-xs text-gray-400">inkl. Steuern & Gebühren</div>
                   </div>
                 </div>
               </div>

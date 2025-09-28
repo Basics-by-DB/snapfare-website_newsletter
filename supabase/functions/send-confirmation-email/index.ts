@@ -68,9 +68,9 @@ const handler = async (req: Request): Promise<Response> => {
             
             <!-- Main Content -->
             <div style="padding: 40px 30px;">
-              <h2 style="color: #1e293b; font-size: 24px; font-weight: 600; margin: 0 0 20px 0;">Willkommen an Bord! 🚀</h2>
+              <h2 style="color: #1e293b; font-size: 24px; font-weight: 600; margin: 0 0 20px 0; text-align: center;">Willkommen an Bord! 🚀</h2>
               
-              <p style="color: #475569; font-size: 16px; line-height: 1.6; margin: 0 0 20px 0;">
+              <p style="color: #475569; font-size: 16px; line-height: 1.6; margin: 0 0 20px 0; text-align: center;">
                 Vielen Dank für deine Anmeldung bei SnapFare! Du bist jetzt offiziell dabei und gehörst zu den ersten, die von unserer kostenlosen vollautomatisierten Flugdeal-Revolution profitieren werden.
               </p>
               
@@ -84,18 +84,12 @@ const handler = async (req: Request): Promise<Response> => {
                 </ul>
               </div>
               
-              ${location ? `
-              <p style="color: #64748b; font-size: 14px; margin: 20px 0;">
-                📍 Deine Region: ${location}
-              </p>
-              ` : ''}
-              
               <div style="background-color: #f8fafc; border-radius: 8px; padding: 25px; margin: 30px 0; text-align: center;">
                 <h3 style="color: #1e293b; font-size: 16px; font-weight: 600; margin: 0 0 10px 0;">Halte Ausschau nach dem SnapFare Newsletter!</h3>
                 <p style="color: #64748b; font-size: 14px; margin: 0;">Wir melden uns bald mit weiteren exklusiven Updates und deinem persönlichen Zugang.</p>
               </div>
               
-              <p style="color: #475569; font-size: 16px; line-height: 1.6; margin: 25px 0 0 0;">
+              <p style="color: #475569; font-size: 16px; line-height: 1.6; margin: 25px 0 0 0; text-align: center;">
                 Bis bald und vielen Dank für dein Vertrauen!<br>
                 <strong style="color: #1e293b;">Das SnapFare Team</strong>
               </p>

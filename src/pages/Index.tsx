@@ -191,10 +191,10 @@ const Index = () => {
                       <span className="text-xl font-bold text-white">Bangkok</span>
                     </div>
                     <div className="text-center mb-4">
-                      <div className="text-sm font-semibold text-white">Oman Air</div>
+                      <div className="text-xm font-semibold text-white">Oman Air</div>
                       <div className="text-xm text-gray-300">✈️Flugzeug: Boeing 787</div>
                       <div className="text-xm text-gray-300">💳Reiseklasse: Economy</div>
-                      <div className="text-xm text-gray-300">🧳Gepäck: 8 + 23kg (Aufpreis 30 CHF)</div>
+                      <div className="text-xm text-gray-300">🧳Gepäck: 8 + 23kg</div>
                     </div>
                     <div className="text-center mb-3">
                       <div className="text-xm font-semibold text-white">Mögliche Reisedaten:</div>

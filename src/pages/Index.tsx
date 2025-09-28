@@ -175,14 +175,61 @@ const Index = () => {
               </p>
             </form>
 
-            {/* Benefits */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-3 sm:gap-4 text-xs sm:text-sm px-4">
-              {benefits.map((benefit, index) => (
-                <div key={index} className="flex items-center gap-2 bg-white/5 rounded-lg p-3">
-                  <Check className="h-4 w-4 text-green-400 flex-shrink-0" />
-                  <span className="text-gray-300 text-left">{benefit}</span>
+            {/* Flight Deals Section */}
+            <div className="max-w-5xl mx-auto px-4">
+              <h3 className="text-xl sm:text-2xl font-semibold text-center text-white mb-8">
+                Melde dich jetzt an, um solche Flugdeals ab der Schweiz direkt in deiner Inbox zu erhalten
+              </h3>
+              
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                {/* Deal 1 */}
+                <div className="bg-white/10 border border-white/20 rounded-lg p-6 aspect-square flex flex-col justify-between hover:bg-white/15 transition-all duration-300">
+                  <div>
+                    <div className="flex items-center justify-between mb-4">
+                      <span className="text-lg font-semibold text-white">ZUR</span>
+                      <ArrowRight className="h-5 w-5 text-green-400" />
+                      <span className="text-lg font-semibold text-white">BKK</span>
+                    </div>
+                    <div className="text-sm text-gray-300 mb-2">Swiss International</div>
+                  </div>
+                  <div>
+                    <div className="text-sm text-gray-400 mb-1">15. - 29. März 2025</div>
+                    <div className="text-2xl font-bold text-green-400">CHF 687</div>
+                  </div>
                 </div>
-              ))}
+
+                {/* Deal 2 */}
+                <div className="bg-white/10 border border-white/20 rounded-lg p-6 aspect-square flex flex-col justify-between hover:bg-white/15 transition-all duration-300">
+                  <div>
+                    <div className="flex items-center justify-between mb-4">
+                      <span className="text-lg font-semibold text-white">GVA</span>
+                      <ArrowRight className="h-5 w-5 text-green-400" />
+                      <span className="text-lg font-semibold text-white">LAX</span>
+                    </div>
+                    <div className="text-sm text-gray-300 mb-2">Lufthansa</div>
+                  </div>
+                  <div>
+                    <div className="text-sm text-gray-400 mb-1">8. - 22. April 2025</div>
+                    <div className="text-2xl font-bold text-green-400">CHF 542</div>
+                  </div>
+                </div>
+
+                {/* Deal 3 */}
+                <div className="bg-white/10 border border-white/20 rounded-lg p-6 aspect-square flex flex-col justify-between hover:bg-white/15 transition-all duration-300">
+                  <div>
+                    <div className="flex items-center justify-between mb-4">
+                      <span className="text-lg font-semibold text-white">BSL</span>
+                      <ArrowRight className="h-5 w-5 text-green-400" />
+                      <span className="text-lg font-semibold text-white">NRT</span>
+                    </div>
+                    <div className="text-sm text-gray-300 mb-2">ANA</div>
+                  </div>
+                  <div>
+                    <div className="text-sm text-gray-400 mb-1">12. - 26. Mai 2025</div>
+                    <div className="text-2xl font-bold text-green-400">CHF 798</div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

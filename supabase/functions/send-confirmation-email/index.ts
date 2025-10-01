@@ -70,7 +70,7 @@ const handler = async (req: Request): Promise<Response> => {
               <!-- Title + Intro (centered as gewünscht) -->
               <h2 style="color:#1e293b;font-size:24px;font-weight:600;margin:0 0 20px 0;text-align:center;">Willkommen an Bord! 🚀</h2>
               <p style="color:#475569;font-size:16px;line-height:1.6;margin:0 0 20px 0;text-align:center;">
-                Vielen Dank für deine Anmeldung bei SnapFare! Du bist jetzt offiziell dabei und gehörst zu den ersten, die von unserer kostenlosen vollautomatisierten Flugdeal-Revolution profitieren werden.
+                Vielen Dank für deine Anmeldung bei SnapFare! Du bist jetzt offiziell dabei und erhältst mit diesem Mail deine ersten Flugdeals.
               </p>
 
               <!-- Info Box: Was passiert als nächstes? -->

@@ -168,7 +168,8 @@ const Premium = () => {
                 <Button 
                   type="submit"
                   disabled={isSubmitting || !email}
-                  className="w-full bg-gradient-to-r from-green-500 to-blue-500 hover:from-green-600 hover:to-blue-600 text-white font-semibold py-3 transition-all duration-300 hover:shadow-lg disabled:opacity-50"
+                  variant="twint"
+                  className="w-full py-3 transition-all duration-300 hover:shadow-lg disabled:opacity-50"
                 >
                   {isSubmitting ? "In Verarbeitung..." : "Upgraden mit TWINT"}
                 </Button>

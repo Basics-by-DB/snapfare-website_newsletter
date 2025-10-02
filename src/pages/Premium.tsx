@@ -4,7 +4,6 @@ import { Check, Star } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
-import twintButton from "@/assets/twint-button.svg";
 
 const TWINT_LINK = "https://go.twint.ch/1/e/tw?tw=acq.gLWaSc6qS9WXTyve02qU3TYzXh6aJj-WV-OoE_J4WpK9fVqgx8XwDgLVcKKthvDk.&amount=49.00&trxInfo=SNAPFARE_PREMIUM_1Y"; // <-- deinen echten TWINT-Link einsetzen
 
@@ -166,14 +165,19 @@ const Premium = () => {
                   required
                   className="bg-white/10 border-white/20 text-white placeholder:text-gray-400"
                 />
-                <button
+                <Button 
                   type="submit"
                   disabled={isSubmitting || !email}
-                  className="w-full h-[58px] flex justify-center items-center cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-300 hover:opacity-90"
-                  style={{ background: 'transparent', border: 'none' }}
+                  variant="twint"
+                  className="w-full py-3 transition-all duration-300 hover:shadow-lg disabled:opacity-50 flex items-center justify-center gap-2"
                 >
-                  <img src={twintButton} alt="Mit TWINT bezahlen" className="w-auto h-[58px]" />
-                </button>
+                  <svg width="24" height="24" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" className="flex-shrink-0">
+                    <path d="M20 2L35 11V29L20 38L5 29V11L20 2Z" fill="currentColor"/>
+                    <path d="M20 8L29 13V27L20 32L11 27V13L20 8Z" fill="#FF0090"/>
+                    <circle cx="20" cy="20" r="4" fill="currentColor"/>
+                  </svg>
+                  {isSubmitting ? "In Verarbeitung..." : "Mit TWINT bezahlen"}
+                </Button>
               </form>
             </div>
           </div>

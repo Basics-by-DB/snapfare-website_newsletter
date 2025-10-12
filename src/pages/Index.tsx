@@ -188,22 +188,22 @@ const Index = () => {
                     <div className="flex items-center justify-center gap-3 mb-4">
                       <span className="text-xl font-bold text-white">Zürich</span>
                       <ArrowRight className="h-6 w-6 text-green-400" />
-                      <span className="text-xl font-bold text-white">Bangkok</span>
+                      <span className="text-xl font-bold text-white">Kapstadt</span>
                     </div>
                     <div className="text-center mb-4">
-                      <div className="text-xm font-semibold text-white">Oman Air</div>
-                      <div className="text-xm text-gray-300">✈️Flugzeug: Boeing 787</div>
+                      <div className="text-xm font-semibold text-white">Condor</div>
+                      <div className="text-xm text-gray-300">✈️Flugzeug: A330neo</div>
                       <div className="text-xm text-gray-300">💳Reiseklasse: Economy</div>
-                      <div className="text-xm text-gray-300">🧳Gepäck: 8 + 23kg</div>
+                      <div className="text-xm text-gray-300">🧳Gepäck: 8 kg</div>
                     </div>
                     <div className="text-center mb-3">
                       <div className="text-xm font-semibold text-white">Mögliche Reisedaten:</div>
-                      <div className="text-sm text-white">November - Februar 2026</div>
+                      <div className="text-sm text-white">Winter 2025/26</div>
                     </div>
                   </div>
                   <div className="text-center">
                     <div className="text-xs text-gray-400 mb-1">Preis pro Person</div>
-                    <div className="text-3xl font-bold text-green-400">CHF 360</div>
+                    <div className="text-3xl font-bold text-green-400">CHF 430</div>
                     <div className="text-xs text-gray-400">inkl. Steuern & Gebühren</div>
                   </div>
                 </div>
@@ -214,22 +214,22 @@ const Index = () => {
                     <div className="flex items-center justify-center gap-3 mb-4">
                       <span className="text-xl font-bold text-white">Zürich</span>
                       <ArrowRight className="h-6 w-6 text-green-400" />
-                      <span className="text-xl font-bold text-white">Lissabon</span>
+                      <span className="text-xl font-bold text-white">Istanbul</span>
                     </div>
                     <div className="text-center mb-4">
-                      <div className="text-xm font-semibold text-white">easyJet</div>
-                      <div className="text-xm text-gray-300">✈️Flugzeug: Airbus A320/321</div>
+                      <div className="text-xm font-semibold text-white">AJet (Turkish Airlines)</div>
+                      <div className="text-xm text-gray-300">✈️Flugzeug: Airbus A320</div>
                       <div className="text-xm text-gray-300">💳Reiseklasse: Economy</div>
                       <div className="text-xm text-gray-300">🧳Gepäck: Personal Item</div>
                     </div>
                     <div className="text-center mb-3">
                       <div className="text-xm font-semibold text-white">Mögliche Reisedaten:</div>
-                      <div className="text-sm text-white">Oktober - März 2026</div>
+                      <div className="text-sm text-white">November - März 2026</div>
                     </div>
                   </div>
                   <div className="text-center">
                     <div className="text-xs text-gray-400 mb-1">Preis pro Person</div>
-                    <div className="text-3xl font-bold text-green-400">CHF 70</div>
+                    <div className="text-3xl font-bold text-green-400">CHF 60</div>
                     <div className="text-xs text-gray-400">inkl. Steuern & Gebühren</div>
                   </div>
                 </div>
@@ -240,22 +240,22 @@ const Index = () => {
                     <div className="flex items-center justify-center gap-3 mb-4">
                       <span className="text-xl font-bold text-white">Zürich</span>
                       <ArrowRight className="h-6 w-6 text-green-400" />
-                      <span className="text-xl font-bold text-white">New York</span>
+                      <span className="text-xl font-bold text-white">Singapur</span>
                     </div>
                     <div className="text-center mb-4">
-                      <div className="text-xm font-semibold text-white">Condor</div>
-                      <div className="text-xm text-gray-300">✈️Flugzeug: Airbus A330</div>
+                      <div className="text-xm font-semibold text-white">Turkish Airlines</div>
+                      <div className="text-xm text-gray-300">✈️Flugzeug: Airbus A350</div>
                       <div className="text-xm text-gray-300">💳Reiseklasse: Economy</div>
                       <div className="text-xm text-gray-300">🧳Gepäck: 8 + 23kg</div>
                     </div>
                     <div className="text-center mb-3">
                       <div className="text-xm font-semibold text-white">Mögliche Reisedaten:</div>
-                      <div className="text-sm text-white">Winter 2025/2026</div>
+                      <div className="text-sm text-white">Oktober - Juni 2026</div>
                     </div>
                   </div>
                   <div className="text-center">
                     <div className="text-xs text-gray-400 mb-1">Preis pro Person</div>
-                    <div className="text-3xl font-bold text-green-400">CHF 290</div>
+                    <div className="text-3xl font-bold text-green-400">CHF 460</div>
                     <div className="text-xs text-gray-400">inkl. Steuern & Gebühren</div>
                   </div>
                 </div>

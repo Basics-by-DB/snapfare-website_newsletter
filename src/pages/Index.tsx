@@ -193,7 +193,6 @@ const Index = () => {
                     <img
                       src="https://plus.unsplash.com/premium_photo-1697730061063-ad499e343f26?mark=https:%2F%2Fimages.unsplash.com%2Fopengraph%2Flogo.png&mark-w=64&mark-align=top%2Cleft&mark-pad=50&h=630&w=1200&crop=faces%2Cedges&blend-w=1&blend=000000&blend-mode=normal&blend-alpha=10&auto=format&fit=crop&q=60&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzI3OTA0OTYxfA&ixlib=rb-4.0.3"
                       className="object-cover w-full h-full"
-                      alt="Zürich → Kapstadt"
                       loading="lazy"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
@@ -228,8 +227,7 @@ const Index = () => {
                 <div className="bg-white/10 border border-white/20 rounded-lg p-0 flex flex-col hover:bg-white/15 transition-all duration-300 overflow-hidden">
                   <div className="relative h-40 sm:h-44 w-full">
                     <img
-                      src="https://images.unsplash.com/photo-1571291454105-e0d3b5afb0c0?auto=format&fit=crop&w=1200&q=80"
-                      alt="Zürich → Istanbul Flugdeal"
+                      src="https://plus.unsplash.com/premium_photo-1661955588369-b0d28de38b45?blend=000000&blend-alpha=10&blend-mode=normal&blend-w=1&crop=faces%2Cedges&h=630&mark=https:%2F%2Fimages.unsplash.com%2Fopengraph%2Flogo.png&mark-align=top%2Cleft&mark-pad=50&mark-w=64&w=1200&auto=format&fit=crop&q=60&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzA3NzM2MDI3fA&ixlib=rb-4.0.3"
                       className="object-cover w-full h-full"
                       loading="lazy"
                     />
@@ -265,8 +263,7 @@ const Index = () => {
                 <div className="bg-white/10 border border-white/20 rounded-lg p-0 flex flex-col hover:bg-white/15 transition-all duration-300 overflow-hidden">
                   <div className="relative h-40 sm:h-44 w-full">
                     <img
-                      src="https://images.unsplash.com/photo-1517949908118-5828e5ce0843?auto=format&fit=crop&w=1200&q=80"
-                      alt="Zürich → Singapur Flugdeal"
+                      src="https://images.unsplash.com/flagged/photo-1573460503891-d0f3a0803f38?blend=000000&blend-alpha=10&blend-mode=normal&blend-w=1&crop=faces%2Cedges&h=630&mark=https:%2F%2Fimages.unsplash.com%2Fopengraph%2Flogo.png&mark-align=top%2Cleft&mark-pad=50&mark-w=64&w=1200&auto=format&fit=crop&q=60&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzE0OTkxODI4fA&ixlib=rb-4.0.3"
                       className="object-cover w-full h-full"
                       loading="lazy"
                     />

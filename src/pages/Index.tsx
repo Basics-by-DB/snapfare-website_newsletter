@@ -191,9 +191,6 @@ const Index = () => {
                   <div className="relative h-40 sm:h-44 w-full">
                     <img
                       src="https://images.unsplash.com/photo-1549240549-805dfb168ce2?auto=format&fit=crop&w=1200&q=80"
-                      alt="Zürich → Kapstadt Flugdeal"
-                      className="object-cover w-full h-full"
-                      loading="lazy"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
                     <div className="absolute bottom-2 left-2 bg-black/50 text-white text-xs px-2 py-1 rounded">Zürich → Kapstadt</div>

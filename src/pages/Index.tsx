@@ -328,7 +328,7 @@ const Index = () => {
             </div>
 
             {/* Process Section */}
-            <div className="py-16 sm:py-20 lg:py-24 bg-gradient-to-b from-slate-900 to-slate-800">
+            <div className="py-16 sm:py-20 lg:py-24 bg-gradient-to-b from-slate-900 to-slate-800 relative left-1/2 right-1/2 -mx-[50vw] w-screen">
               <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-12 sm:mb-16 lg:mb-20">
                   <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4 sm:mb-6 px-4">
@@ -373,7 +373,7 @@ const Index = () => {
             </div>
 
             {/* Final CTA */}
-            <div className="py-16 sm:py-20 lg:py-24 bg-gradient-to-r from-green-500/10 to-blue-500/10">
+            <div className="py-16 sm:py-20 lg:py-24 bg-gradient-to-r from-green-500/10 to-blue-500/10 relative left-1/2 right-1/2 -mx-[50vw] w-screen">
               <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
                 <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4 sm:mb-6">Bereit für stressfreie Schnäppchen?</h2>
                 <p className="text-lg sm:text-xl text-gray-300 mb-8 sm:mb-10">Melde dich jetzt an und sei einer der ersten, die SnapFare nutzen können.</p>
@@ -407,7 +407,7 @@ const Index = () => {
             </div>
 
             {/* Footer */}
-            <footer className="bg-slate-900 py-8 sm:py-12">
+            <footer className="bg-slate-900 py-8 sm:py-12 relative left-1/2 right-1/2 -mx-[50vw] w-screen">
               <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex flex-col md:flex-row justify-between items-center gap-4">
                   <div className="flex items-center gap-3 mb-4 md:mb-0">

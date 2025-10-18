@@ -184,13 +184,12 @@ const Index = () => {
               <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-300 mb-6 sm:mb-8 max-w-4xl mx-auto leading-relaxed px-4">
                 Melde dich jetzt an, um alle <span className="text-green-400">Flugdeals</span> der letzten Woche via Email zu erhalten!
               </p>
-
+            
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
                 
                 {/* Deal 1 */}
-                <div className="bg-white/10 border border-white/20 rounded-lg p-0 overflow-hidden hover:bg-white/15 transition-all duration-300">
-                  {/* Bild deutlich kleiner */}
-                  <div className="relative h-20 sm:h-24 w-full">
+                <div className="bg-white/10 border border-white/20 rounded-lg p-0 flex flex-col hover:bg-white/15 transition-all duration-300 overflow-hidden">
+                  <div className="relative h-40 sm:h-44 w-full">
                     <img
                       src="https://plus.unsplash.com/premium_photo-1697730061063-ad499e343f26?mark=https:%2F%2Fimages.unsplash.com%2Fopengraph%2Flogo.png&mark-w=64&mark-align=top%2Cleft&mark-pad=50&h=630&w=1200&crop=faces%2Cedges&blend-w=1&blend=000000&blend-mode=normal&blend-alpha=10&auto=format&fit=crop&q=60&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzI3OTA0OTYxfA&ixlib=rb-4.0.3"
                       className="object-cover w-full h-full"
@@ -199,38 +198,32 @@ const Index = () => {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
                   </div>
-                
-                  {/* Inhalt stark verdichtet */}
-                  <div className="p-3 leading-tight">
-                    <div className="flex items-center justify-center gap-1.5 mb-1.5">
-                      <span className="text-base font-bold text-white">Zürich</span>
-                      <ArrowRight className="h-4 w-4 text-green-400" />
-                      <span className="text-base font-bold text-white">Kapstadt</span>
+                  <div className="p-6 flex-1 flex flex-col justify-between">
+                    <div>
+                      <div className="flex items-center justify-center gap-3 mb-4">
+                        <span className="text-xl font-bold text-white">Zürich</span>
+                        <ArrowRight className="h-6 w-6 text-green-400" />
+                        <span className="text-xl font-bold text-white">Kapstadt</span>
+                      </div>
+                      <div className="text-center mb-4">
+                        <div className="text-xm font-semibold text-white">Condor</div>
+                        <div className="text-xm text-gray-300">✈️Flugzeug: A330neo</div>
+                        <div className="text-xm text-gray-300">💳Reiseklasse: Economy</div>
+                        <div className="text-xm text-gray-300">🧳Gepäck: 8 kg</div>
+                      </div>
+                      <div className="text-center mb-3">
+                        <div className="text-xm font-semibold text-white">Mögliche Reisedaten:</div>
+                        <div className="text-sm text-white">Winter 2025/26</div>
+                      </div>
                     </div>
-                
-                    <div className="text-center mb-2">
-                      <div className="text-xs font-semibold text-white">Condor</div>
-                      <div className="text-xs text-gray-300">✈️ Flugzeug: A330neo</div>
-                      <div className="text-xs text-gray-300">💳 Reiseklasse: Economy</div>
-                      <div className="text-xs text-gray-300">🧳 Gepäck: 8 kg</div>
-                    </div>
-                
-                    <div className="text-center mb-2">
-                      <div className="text-xs font-semibold text-white">Mögliche Reisedaten:</div>
-                      <div className="text-xs text-white">Winter 2025/26</div>
-                    </div>
-                
-                    {/* Preis kompakt */}
                     <div className="text-center">
-                      <div className="text-[10px] text-gray-400 mb-0.5">Preis pro Person</div>
-                      <div className="text-xl font-bold text-green-400">CHF 430</div>
-                      <div className="text-[10px] text-gray-400">inkl. Steuern & Gebühren</div>
+                      <div className="text-xs text-gray-400 mb-1">Preis pro Person</div>
+                      <div className="text-3xl font-bold text-green-400">CHF 430</div>
+                      <div className="text-xs text-gray-400">inkl. Steuern & Gebühren</div>
                     </div>
                   </div>
                 </div>
-
-
-
+            
                 {/* Deal 2 */}
                 <div className="bg-white/10 border border-white/20 rounded-lg p-0 flex flex-col hover:bg-white/15 transition-all duration-300 overflow-hidden">
                   <div className="relative h-40 sm:h-44 w-full">
@@ -241,7 +234,6 @@ const Index = () => {
                       loading="lazy"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
-                    <div className="absolute bottom-2 left-2 bg-black/50 text-white text-xs px-2 py-1 rounded">Zürich → Istanbul</div>
                   </div>
                   <div className="p-6 flex-1 flex flex-col justify-between">
                     <div>
@@ -253,8 +245,8 @@ const Index = () => {
                       <div className="text-center mb-4">
                         <div className="text-xm font-semibold text-white">AJet (Turkish Airlines)</div>
                         <div className="text-xm text-gray-300">✈️Flugzeug: Airbus A320</div>
-                        <div class="text-xm text-gray-300">💳Reiseklasse: Economy</div>
-                        <div class="text-xm text-gray-300">🧳Gepäck: Personal Item</div>
+                        <div className="text-xm text-gray-300">💳Reiseklasse: Economy</div>
+                        <div className="text-xm text-gray-300">🧳Gepäck: Personal Item</div>
                       </div>
                       <div className="text-center mb-3">
                         <div className="text-xm font-semibold text-white">Mögliche Reisedaten:</div>
@@ -268,7 +260,7 @@ const Index = () => {
                     </div>
                   </div>
                 </div>
-
+            
                 {/* Deal 3 */}
                 <div className="bg-white/10 border border-white/20 rounded-lg p-0 flex flex-col hover:bg-white/15 transition-all duration-300 overflow-hidden">
                   <div className="relative h-40 sm:h-44 w-full">
@@ -279,11 +271,10 @@ const Index = () => {
                       loading="lazy"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
-                    <div className="absolute bottom-2 left-2 bg-black/50 text-white text-xs px-2 py-1 rounded">Zürich → Singapur</div>
                   </div>
                   <div className="p-6 flex-1 flex flex-col justify-between">
                     <div>
-                      <div className="flex items-center justify-center-gap-3 mb-4">
+                      <div className="flex items-center justify-center gap-3 mb-4">
                         <span className="text-xl font-bold text-white">Zürich</span>
                         <ArrowRight className="h-6 w-6 text-green-400" />
                         <span className="text-xl font-bold text-white">Singapur</span>
@@ -306,8 +297,10 @@ const Index = () => {
                     </div>
                   </div>
                 </div>
+            
               </div>
             </div>
+
 
             {/* Features Section */}
             <div className="py-16 sm:py-20 lg:py-24 bg-gradient-to-b from-slate-800 to-slate-900">

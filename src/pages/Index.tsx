@@ -175,90 +175,129 @@ const Index = () => {
               </p>
             </form>
 
-            {/* Flight Deals Section */}
-            <div className="max-w-5xl mx-auto px-4">
-              <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-300 mb-6 sm:mb-8 max-w-4xl mx-auto leading-relaxed px-4">
-                Melde dich jetzt an, um alle <span className="text-green-400">Flugdeals</span> der letzten Woche via Email zu erhalten!
-              </p>
-              
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
-                {/* Deal 1 */}
-                <div className="bg-white/10 border border-white/20 rounded-lg p-6 aspect-square flex flex-col justify-between hover:bg-white/15 transition-all duration-300">
-                  <div>
-                    <div className="flex items-center justify-center gap-3 mb-4">
-                      <span className="text-xl font-bold text-white">Zürich</span>
-                      <ArrowRight className="h-6 w-6 text-green-400" />
-                      <span className="text-xl font-bold text-white">Kapstadt</span>
-                    </div>
-                    <div className="text-center mb-4">
-                      <div className="text-xm font-semibold text-white">Condor</div>
-                      <div className="text-xm text-gray-300">✈️Flugzeug: A330neo</div>
-                      <div className="text-xm text-gray-300">💳Reiseklasse: Economy</div>
-                      <div className="text-xm text-gray-300">🧳Gepäck: 8 kg</div>
-                    </div>
-                    <div className="text-center mb-3">
-                      <div className="text-xm font-semibold text-white">Mögliche Reisedaten:</div>
-                      <div className="text-sm text-white">Winter 2025/26</div>
-                    </div>
-                  </div>
-                  <div className="text-center">
-                    <div className="text-xs text-gray-400 mb-1">Preis pro Person</div>
-                    <div className="text-3xl font-bold text-green-400">CHF 430</div>
-                    <div className="text-xs text-gray-400">inkl. Steuern & Gebühren</div>
-                  </div>
+      {/* Flight Deals Section */}
+      <div className="max-w-5xl mx-auto px-4">
+        <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-300 mb-6 sm:mb-8 max-w-4xl mx-auto leading-relaxed px-4">
+          Melde dich jetzt an, um alle <span className="text-green-400">Flugdeals</span> der letzten Woche via Email zu erhalten!
+        </p>
+        
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+          {/* Deal 1 */}
+          <div className="bg-white/10 border border-white/20 rounded-lg p-0 flex flex-col hover:bg-white/15 transition-all duration-300 overflow-hidden">
+            <div className="relative h-40 sm:h-44 w-full">
+              <img
+                src="https://images.unsplash.com/photo-1549240549-805dfb168ce2?auto=format&fit=crop&w=1200&q=80"
+                alt="Zürich → Kapstadt Flugdeal"
+                className="object-cover w-full h-full"
+                loading="lazy"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+              <div className="absolute bottom-2 left-2 bg-black/50 text-white text-xs px-2 py-1 rounded">
+                Zürich → Kapstadt
+              </div>
+            </div>
+            <div className="p-6 flex-1 flex flex-col justify-between">
+              <div>
+                <div className="flex items-center justify-center gap-3 mb-4">
+                  <span className="text-xl font-bold text-white">Zürich</span>
+                  <ArrowRight className="h-6 w-6 text-green-400" />
+                  <span className="text-xl font-bold text-white">Kapstadt</span>
                 </div>
-
-                {/* Deal 2 */}
-                <div className="bg-white/10 border border-white/20 rounded-lg p-6 aspect-square flex flex-col justify-between hover:bg-white/15 transition-all duration-300">
-                  <div>
-                    <div className="flex items-center justify-center gap-3 mb-4">
-                      <span className="text-xl font-bold text-white">Zürich</span>
-                      <ArrowRight className="h-6 w-6 text-green-400" />
-                      <span className="text-xl font-bold text-white">Istanbul</span>
-                    </div>
-                    <div className="text-center mb-4">
-                      <div className="text-xm font-semibold text-white">AJet (Turkish Airlines)</div>
-                      <div className="text-xm text-gray-300">✈️Flugzeug: Airbus A320</div>
-                      <div className="text-xm text-gray-300">💳Reiseklasse: Economy</div>
-                      <div className="text-xm text-gray-300">🧳Gepäck: Personal Item</div>
-                    </div>
-                    <div className="text-center mb-3">
-                      <div className="text-xm font-semibold text-white">Mögliche Reisedaten:</div>
-                      <div className="text-sm text-white">November - März 2026</div>
-                    </div>
-                  </div>
-                  <div className="text-center">
-                    <div className="text-xs text-gray-400 mb-1">Preis pro Person</div>
-                    <div className="text-3xl font-bold text-green-400">CHF 60</div>
-                    <div className="text-xs text-gray-400">inkl. Steuern & Gebühren</div>
-                  </div>
+                <div className="text-center mb-4">
+                  <div className="text-xm font-semibold text-white">Condor</div>
+                  <div className="text-xm text-gray-300">✈️Flugzeug: A330neo</div>
+                  <div className="text-xm text-gray-300">💳Reiseklasse: Economy</div>
+                  <div className="text-xm text-gray-300">🧳Gepäck: 8 kg</div>
                 </div>
-
-                {/* Deal 3 */}
-                <div className="bg-white/10 border border-white/20 rounded-lg p-6 aspect-square flex flex-col justify-between hover:bg-white/15 transition-all duration-300">
-                  <div>
-                    <div className="flex items-center justify-center gap-3 mb-4">
-                      <span className="text-xl font-bold text-white">Zürich</span>
-                      <ArrowRight className="h-6 w-6 text-green-400" />
-                      <span className="text-xl font-bold text-white">Singapur</span>
-                    </div>
-                    <div className="text-center mb-4">
-                      <div className="text-xm font-semibold text-white">Turkish Airlines</div>
-                      <div className="text-xm text-gray-300">✈️Flugzeug: Airbus A350</div>
-                      <div className="text-xm text-gray-300">💳Reiseklasse: Economy</div>
-                      <div className="text-xm text-gray-300">🧳Gepäck: 8 + 23kg</div>
-                    </div>
-                    <div className="text-center mb-3">
-                      <div className="text-xm font-semibold text-white">Mögliche Reisedaten:</div>
-                      <div className="text-sm text-white">Oktober - Juni 2026</div>
-                    </div>
-                  </div>
-                  <div className="text-center">
-                    <div className="text-xs text-gray-400 mb-1">Preis pro Person</div>
-                    <div className="text-3xl font-bold text-green-400">CHF 460</div>
-                    <div className="text-xs text-gray-400">inkl. Steuern & Gebühren</div>
-                  </div>
+                <div className="text-center mb-3">
+                  <div className="text-xm font-semibold text-white">Mögliche Reisedaten:</div>
+                  <div className="text-sm text-white">Winter 2025/26</div>
                 </div>
+              </div>
+              <div className="text-center">
+                <div className="text-xs text-gray-400 mb-1">Preis pro Person</div>
+                <div className="text-3xl font-bold text-green-400">CHF 430</div>
+                <div className="text-xs text-gray-400">inkl. Steuern & Gebühren</div>
+              </div>
+            </div>
+          </div>
+      
+          {/* Deal 2 */}
+          <div className="bg-white/10 border border-white/20 rounded-lg p-0 flex flex-col hover:bg-white/15 transition-all duration-300 overflow-hidden">
+            <div className="relative h-40 sm:h-44 w-full">
+              <img
+                src="https://images.unsplash.com/photo-1571291454105-e0d3b5afb0c0?auto=format&fit=crop&w=1200&q=80"
+                alt="Zürich → Istanbul Flugdeal"
+                className="object-cover w-full h-full"
+                loading="lazy"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+              <div className="absolute bottom-2 left-2 bg-black/50 text-white text-xs px-2 py-1 rounded">
+                Zürich → Istanbul
+              </div>
+            </div>
+            <div className="p-6 flex-1 flex flex-col justify-between">
+              <div>
+                <div className="flex items-center justify-center gap-3 mb-4">
+                  <span className="text-xl font-bold text-white">Zürich</span>
+                  <ArrowRight className="h-6 w-6 text-green-400" />
+                  <span className="text-xl font-bold text-white">Istanbul</span>
+                </div>
+                <div className="text-center mb-4">
+                  <div className="text-xm font-semibold text-white">AJet (Turkish Airlines)</div>
+                  <div className="text-xm text-gray-300">✈️Flugzeug: Airbus A320</div>
+                  <div class="text-xm text-gray-300">💳Reiseklasse: Economy</div>
+                  <div class="text-xm text-gray-300">🧳Gepäck: Personal Item</div>
+                </div>
+                <div className="text-center mb-3">
+                  <div className="text-xm font-semibold text-white">Mögliche Reisedaten:</div>
+                  <div className="text-sm text-white">November – März 2026</div>
+                </div>
+              </div>
+              <div className="text-center">
+                <div className="text-xs text-gray-400 mb-1">Preis pro Person</div>
+                <div className="text-3xl font-bold text-green-400">CHF 60</div>
+                <div className="text-xs text-gray-400">inkl. Steuern & Gebühren</div>
+              </div>
+            </div>
+          </div>
+      
+          {/* Deal 3 */}
+          <div className="bg-white/10 border border-white/20 rounded-lg p-0 flex flex-col hover:bg-white/15 transition-all duration-300 overflow-hidden">
+            <div className="relative h-40 sm:h-44 w-full">
+              <img
+                src="https://images.unsplash.com/photo-1517949908118-5828e5ce0843?auto=format&fit=crop&w=1200&q=80"
+                alt="Zürich → Singapur Flugdeal"
+                className="object-cover w-full h-full"
+                loading="lazy"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+              <div className="absolute bottom-2 left-2 bg-black/50 text-white text-xs px-2 py-1 rounded">
+                Zürich → Singapur
+              </div>
+            </div>
+            <div className="p-6 flex-1 flex flex-col justify-between">
+              <div>
+                <div className="flex items-center justify-center-gap-3 mb-4">
+                  <span className="text-xl font-bold text-white">Zürich</span>
+                  <ArrowRight className="h-6 w-6 text-green-400" />
+                  <span className="text-xl font-bold text-white">Singapur</span>
+                </div>
+                <div className="text-center mb-4">
+                  <div className="text-xm font-semibold text-white">Turkish Airlines</div>
+                  <div className="text-xm text-gray-300">✈️Flugzeug: Airbus A350</div>
+                  <div className="text-xm text-gray-300">💳Reiseklasse: Economy</div>
+                  <div className="text-xm text-gray-300">🧳Gepäck: 8 + 23 kg</div>
+                </div>
+                <div className="text-center mb-3">
+                  <div className="text-xm font-semibold text-white">Mögliche Reisedaten:</div>
+                  <div className="text-sm text-white">Oktober – Juni 2026</div>
+                </div>
+              </div>
+              <div className="text-center">
+                <div className="text-xs text-gray-400 mb-1">Preis pro Person</div>
+                <div className="text-3xl font-bold text-green-400">CHF 460</div>
+                <div className="text-xs text-gray-400">inkl. Steuern & Gebühren</div>
               </div>
             </div>
           </div>

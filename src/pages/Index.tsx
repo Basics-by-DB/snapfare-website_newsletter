@@ -3,6 +3,7 @@ import { Plane, Clock, Target, Bell, CreditCard, Shield, User, ArrowRight, Check
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Card, CardContent } from '@/components/ui/card';
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription, DialogFooter } from '@/components/ui/dialog';
 import { toast } from '@/hooks/use-toast';
 import { supabase } from '@/integrations/supabase/client';
 
@@ -10,6 +11,8 @@ const Index = () => {
   const [email, setEmail] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [userLocation, setUserLocation] = useState<string>('');
+  const [isDealModalOpen, setIsDealModalOpen] = useState(false);
+  const [selectedDeal, setSelectedDeal] = useState<string | null>(null);
 
   useEffect(() => {
     // Try to get user's location
@@ -27,6 +30,11 @@ const Index = () => {
     getUserLocation();
   }, []);
 
+  const openDealModal = (label: string) => {
+    setSelectedDeal(label);
+    setIsDealModalOpen(true);
+  };
+
   const handleWaitlistSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!email.trim()) return;
@@ -39,7 +47,8 @@ const Index = () => {
         .insert([
           {
             email: email.trim().toLowerCase(),
-            location: userLocation
+            location: userLocation,
+            // source_deal: selectedDeal, // <— optional: nur nutzen, wenn Spalte existiert
           }
         ]);
 
@@ -53,7 +62,8 @@ const Index = () => {
         await supabase.functions.invoke('send-confirmation-email', {
           body: {
             email: email.trim().toLowerCase(),
-            location: userLocation
+            location: userLocation,
+            // source_deal: selectedDeal, // <— optional
           }
         });
       } catch (emailError) {
@@ -67,6 +77,7 @@ const Index = () => {
       });
 
       setEmail('');
+      setIsDealModalOpen(false); // Modal nach Erfolg schließen
     } catch (error) {
       console.error('Error joining waitlist:', error);
       toast({
@@ -184,11 +195,18 @@ const Index = () => {
               <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-300 mb-6 sm:mb-8 max-w-4xl mx-auto leading-relaxed px-4">
                 Melde dich jetzt an, um alle <span className="text-green-400">Flugdeals</span> der letzten Woche via Email zu erhalten!
               </p>
-            
+
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 mb-10 md:mb-14 lg:mb-16">
-                
+
                 {/* Deal 1 */}
-                <div className="bg-white/10 border border-white/20 rounded-lg p-0 flex flex-col hover:bg-white/15 transition-all duration-300 overflow-hidden">
+                <div
+                  onClick={() => openDealModal("Zürich → Kapstadt (Condor) – CHF 430")}
+                  role="button"
+                  tabIndex={0}
+                  aria-label="Deal öffnen: Zürich nach Kapstadt"
+                  onKeyDown={(e) => (e.key === 'Enter' || e.key === ' ') && openDealModal("Zürich → Kapstadt (Condor) – CHF 430")}
+                  className="bg-white/10 border border-white/20 rounded-lg p-0 flex flex-col hover:bg-white/15 transition-all duration-300 overflow-hidden cursor-pointer focus:outline-none focus:ring-2 focus:ring-green-500"
+                >
                   <div className="relative h-40 sm:h-44 w-full">
                     <img
                       src="https://plus.unsplash.com/premium_photo-1697730061063-ad499e343f26?mark=https:%2F%2Fimages.unsplash.com%2Fopengraph%2Flogo.png&mark-w=64&mark-align=top%2Cleft&mark-pad=50&h=630&w=1200&crop=faces%2Cedges&blend-w=1&blend=000000&blend-mode=normal&blend-alpha=10&auto=format&fit=crop&q=60&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzI3OTA0OTYxfA&ixlib=rb-4.0.3"
@@ -222,9 +240,16 @@ const Index = () => {
                     </div>
                   </div>
                 </div>
-            
+
                 {/* Deal 2 */}
-                <div className="bg-white/10 border border-white/20 rounded-lg p-0 flex flex-col hover:bg-white/15 transition-all duration-300 overflow-hidden">
+                <div
+                  onClick={() => openDealModal("Zürich → Istanbul (AJet/Turkish) – CHF 60")}
+                  role="button"
+                  tabIndex={0}
+                  aria-label="Deal öffnen: Zürich nach Istanbul"
+                  onKeyDown={(e) => (e.key === 'Enter' || e.key === ' ') && openDealModal("Zürich → Istanbul (AJet/Turkish) – CHF 60")}
+                  className="bg-white/10 border border-white/20 rounded-lg p-0 flex flex-col hover:bg-white/15 transition-all duration-300 overflow-hidden cursor-pointer focus:outline-none focus:ring-2 focus:ring-green-500"
+                >
                   <div className="relative h-40 sm:h-44 w-full">
                     <img
                       src="https://plus.unsplash.com/premium_photo-1661955588369-b0d28de38b45?blend=000000&blend-alpha=10&blend-mode=normal&blend-w=1&crop=faces%2Cedges&h=630&mark=https:%2F%2Fimages.unsplash.com%2Fopengraph%2Flogo.png&mark-align=top%2Cleft&mark-pad=50&mark-w=64&w=1200&auto=format&fit=crop&q=60&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzA3NzM2MDI3fA&ixlib=rb-4.0.3"
@@ -258,9 +283,16 @@ const Index = () => {
                     </div>
                   </div>
                 </div>
-            
+
                 {/* Deal 3 */}
-                <div className="bg-white/10 border border-white/20 rounded-lg p-0 flex flex-col hover:bg-white/15 transition-all duration-300 overflow-hidden">
+                <div
+                  onClick={() => openDealModal("Zürich → Singapur (Turkish Airlines) – CHF 460")}
+                  role="button"
+                  tabIndex={0}
+                  aria-label="Deal öffnen: Zürich nach Singapur"
+                  onKeyDown={(e) => (e.key === 'Enter' || e.key === ' ') && openDealModal("Zürich → Singapur (Turkish Airlines) – CHF 460")}
+                  className="bg-white/10 border border-white/20 rounded-lg p-0 flex flex-col hover:bg-white/15 transition-all duration-300 overflow-hidden cursor-pointer focus:outline-none focus:ring-2 focus:ring-green-500"
+                >
                   <div className="relative h-40 sm:h-44 w-full">
                     <img
                       src="https://images.unsplash.com/flagged/photo-1573460503891-d0f3a0803f38?blend=000000&blend-alpha=10&blend-mode=normal&blend-w=1&crop=faces%2Cedges&h=630&mark=https:%2F%2Fimages.unsplash.com%2Fopengraph%2Flogo.png&mark-align=top%2Cleft&mark-pad=50&mark-w=64&w=1200&auto=format&fit=crop&q=60&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzE0OTkxODI4fA&ixlib=rb-4.0.3"
@@ -294,10 +326,51 @@ const Index = () => {
                     </div>
                   </div>
                 </div>
-            
-              </div>
-            </div>
 
+              </div>
+
+              {/* Deal Modal (Popup) */}
+              <Dialog open={isDealModalOpen} onOpenChange={setIsDealModalOpen}>
+                <DialogContent className="bg-slate-900 text-white border border-white/20">
+                  <DialogHeader>
+                    <DialogTitle>Hol dir den Link zum Deal</DialogTitle>
+                    <DialogDescription className="text-gray-300">
+                      {selectedDeal && <span className="block mt-1">{selectedDeal}</span>}
+                    </DialogDescription>
+                  </DialogHeader>
+
+                  <p className="text-gray-300">
+                    Melde dich kurz an – wir schicken dir den Direktlink zum Deal sowie Updates zu ähnlichen Angeboten.
+                  </p>
+
+                  <form onSubmit={handleWaitlistSubmit} className="mt-4 flex flex-col sm:flex-row gap-3">
+                    <Input
+                      type="email"
+                      placeholder="Deine E-Mail-Adresse"
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
+                      required
+                      className="flex-1 bg-white/10 border-white/20 text-white placeholder:text-gray-400 h-12 text-base"
+                    />
+                    <Button
+                      type="submit"
+                      disabled={isSubmitting}
+                      className="bg-gradient-to-r from-green-500 to-blue-500 hover:from-green-600 hover:to-blue-600 h-12 px-6 sm:px-8"
+                    >
+                      {isSubmitting ? (
+                        <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-white" />
+                      ) : (
+                        <>Link zusenden</>
+                      )}
+                    </Button>
+                  </form>
+
+                  <DialogFooter>
+                    <p className="text-xs text-gray-400">Kein Spam. Abmeldung jederzeit möglich.</p>
+                  </DialogFooter>
+                </DialogContent>
+              </Dialog>
+            </div>
 
             {/* Features Section */}
             <div className="py-16 sm:py-20 lg:py-24 bg-gradient-to-b from-slate-800 to-slate-900 relative left-1/2 right-1/2 -mx-[50vw] w-screen">

@@ -51,7 +51,7 @@ const Datenschutz = () => {
                 <h2 className="text-2xl font-semibold mb-4 text-white">3. Zwecke der Datenbearbeitung</h2>
                 <ul className="list-disc list-inside space-y-2 text-gray-300 leading-relaxed">
                   <li>Bereitstellung der Website & technischer Betrieb</li>
-                  <li>Versand des Newsletters (Free & Premium), Verwaltung von Abos</li>
+                  <li>Versand des Newsletters, Verwaltung der Abonnements und Durchführung der Verlosungen</li>
                   <li>Abwicklung von Zahlungen (Premium)</li>
                   <li>Reichweitenmessung & Optimierung (Analytics)</li>
                   <li>Erfüllung rechtlicher Pflichten und Durchsetzung von Ansprüchen</li>
@@ -137,7 +137,14 @@ const Datenschutz = () => {
               </section>
 
               <section className="mb-8">
-                <h2 className="text-2xl font-semibold mb-4 text-white">13. Änderungen</h2>
+                <h2 className="text-2xl font-semibold mb-4 text-white">13. Newsletter & Verlosungen</h2>
+                <p className="text-gray-300 leading-relaxed">
+                  Im Rahmen des Newsletters führen wir gelegentlich Verlosungen durch, z. B. von Premium-Mitgliedschaften. Die Teilnahme erfolgt automatisch mit einer aktiven Newsletter-Anmeldung. Unter allen gültigen Abonnentinnen und Abonnenten werden die Gewinnerinnen und Gewinner zufällig ausgelost und per E-Mail benachrichtigt. Die Teilnahme ist kostenlos, es besteht kein Kaufzwang. Keine Weitergabe an Dritte, ausser wenn dies für die Gewinnabwicklung erforderlich ist (z. B. Versand des Preises). Der Rechtsweg ist ausgeschlossen.
+                </p>
+              </section>
+
+              <section className="mb-8">
+                <h2 className="text-2xl font-semibold mb-4 text-white">14. Änderungen</h2>
                 <p className="text-gray-300 leading-relaxed">
                   Wir können diese Datenschutzerklärung anpassen, wenn sich unsere Prozesse oder rechtliche Grundlagen ändern. Es gilt die jeweils auf dieser Seite veröffentlichte Version.
                 </p>

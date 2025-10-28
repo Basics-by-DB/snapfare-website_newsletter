@@ -32,43 +32,43 @@ const Index = () => {
   // >>> HIER deine Deals – alles, was du änderst, spiegelt sich automatisch im Pop-up wider
   const deals: Deal[] = [
     {
-      id: "CPT",
+      id: "SYD",
       from: "Zürich",
-      to: "Kapstadt",
-      airline: "Condor",
-      aircraft: "A330neo",
-      travelClass: "Economy",
-      baggage: "8 kg",
-      dates: "Winter 2025/26",
-      price: "CHF 430",
-      image:
-        "https://plus.unsplash.com/premium_photo-1697730061063-ad499e343f26?mark=https:%2F%2Fimages.unsplash.com%2Fopengraph%2Flogo.png&mark-w=64&mark-align=top%2Cleft&mark-pad=50&h=630&w=1200&crop=faces%2Cedges&blend-w=1&blend=000000&blend-mode=normal&blend-alpha=10&auto=format&fit=crop&q=60&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzI3OTA0OTYxfA&ixlib=rb-4.0.3",
-    },
-    {
-      id: "IST",
-      from: "Zürich",
-      to: "Istanbul",
-      airline: "AJet (Turkish Airlines)",
-      aircraft: "Airbus A320",
-      travelClass: "Economy",
-      baggage: "Personal Item",
-      dates: "November – März 2026",
-      price: "CHF 60",
-      image:
-        "https://plus.unsplash.com/premium_photo-1661955588369-b0d28de38b45?blend=000000&blend-alpha=10&blend-mode=normal&blend-w=1&crop=faces%2Cedges&h=630&mark=https:%2F%2Fimages.unsplash.com%2Fopengraph%2Flogo.png&mark-align=top%2Cleft&mark-pad=50&mark-w=64&w=1200&auto=format&fit=crop&q=60&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzA3NzM2MDI3fA&ixlib=rb-4.0.3",
-    },
-    {
-      id: "SIN",
-      from: "Zürich",
-      to: "Singapur",
+      to: "Sydney",
       airline: "Turkish Airlines",
       aircraft: "Airbus A350",
       travelClass: "Economy",
-      baggage: "8 + 23 kg",
-      dates: "Oktober – Juni 2026",
-      price: "CHF 460",
+      baggage: "23 kg",
+      dates: "Winter 2025/26",
+      price: "CHF 850",
       image:
-        "https://images.unsplash.com/flagged/photo-1573460503891-d0f3a0803f38?blend=000000&blend-alpha=10&blend-mode=normal&blend-w=1&crop=faces%2Cedges&h=630&mark=https:%2F%2Fimages.unsplash.com%2Fopengraph%2Flogo.png&mark-align=top%2Cleft&mark-pad=50&mark-w=64&w=1200&auto=format&fit=crop&q=60&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzE0OTkxODI4fA&ixlib=rb-4.0.3",
+        "https://media.istockphoto.com/id/892808186/photo/sydney.jpg?b=1&s=170667a&w=0&k=20&c=ReC5-ifFV2q2Wvui520DjptF9RVMfoMjum7xObtS62w=",
+    },
+    {
+      id: "SHJ",
+      from: "Zürich",
+      to: "Dubai",
+      airline: "Turkish Airlines",
+      aircraft: "Boeing B737",
+      travelClass: "Economy",
+      baggage: "8 kg",
+      dates: "November – Dezember 2025",
+      price: "CHF 220",
+      image:
+        "https://images.unsplash.com/photo-1542544499-bce9dc3bb4e8?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjEyMDd9",
+    },
+    {
+      id: "PUJ",
+      from: "Zürich",
+      to: "Punta Cana",
+      airline: "Condor",
+      aircraft: "Airbus A330neo",
+      travelClass: "Economy",
+      baggage: "8 kg",
+      dates: "November – Juni 2026",
+      price: "CHF 600",
+      image:
+        "https://media.istockphoto.com/id/1315005752/photo/paradise-tropical-island-nature-background-top-aerial-drone-view-of-beautiful-beach-with.jpg?b=1&s=170667a&w=0&k=20&c=T6OsJaP3n2vaXld7xbgIconb6RKQouF96zsMmIt5r-M=",
     },
   ];
 

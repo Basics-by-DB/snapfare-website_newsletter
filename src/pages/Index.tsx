@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
 import {
-  Plane, Clock, Target, Bell, CreditCard, Shield, User, ArrowRight, Bug, Youtube
+  Plane, Clock, Target, Bell, CreditCard, Shield, User, ArrowRight, Bug
 } from 'lucide-react';
+import { SiTiktok, SiYoutube } from 'react-icons/si';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Card, CardContent } from '@/components/ui/card';
@@ -22,17 +23,6 @@ type Deal = {
   image: string;
 };
 
-/** Inline TikTok Icon (kein externes Icon nötig) */
-const TikTokIcon = (props: React.SVGProps<SVGSVGElement>) => (
-  <svg viewBox="0 0 24 24" aria-hidden="true" role="img" {...props}>
-    {/* stilisierter Musiknoten-Logo-Look, monochrom */}
-    <path
-      fill="currentColor"
-      d="M14 3v6.2a4.8 4.8 0 1 1-2-3.9V5h4.2A6 6 0 0 0 20 8v3a8 8 0 0 1-6-2.2V14a5.5 5.5 0 1 1-2.5-4.6V3h2.5Z"
-    />
-  </svg>
-);
-
 const Index = () => {
   const [email, setEmail] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -42,7 +32,7 @@ const Index = () => {
   const [isDealModalOpen, setIsDealModalOpen] = useState(false);
   const [selectedDeal, setSelectedDeal] = useState<Deal | null>(null);
 
-  // >>> HIER deine Deals – alles, was du änderst, spiegelt sich automatisch im Pop-up wider
+  // Deals
   const deals: Deal[] = [
     {
       id: "SYD",
@@ -197,8 +187,8 @@ const Index = () => {
   ];
 
   const socialLinks = [
-    { href: 'https://www.tiktok.com/@snapfare', label: 'TikTok', Icon: TikTokIcon },
-    { href: 'https://www.youtube.com/@snapfare_ch', label: 'YouTube', Icon: Youtube },
+    { href: 'https://www.tiktok.com/@snapfare', label: 'TikTok', Icon: SiTiktok },
+    { href: 'https://www.youtube.com/@snapfare_ch', label: 'YouTube', Icon: SiYoutube },
   ];
 
   return (
@@ -473,39 +463,26 @@ const Index = () => {
                       SnapFare
                     </span>
 
-                    {/* Social Icons (TikTok = Inline SVG, YouTube = lucide) */}
+                    {/* Social Icons (echte Logos via react-icons) */}
                     <div className="flex items-center gap-3">
-                      <a
-                        href="https://www.tiktok.com/@snapfare"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label="TikTok"
-                        title="TikTok"
-                        className="inline-flex h-10 w-10 items-center justify-center rounded-xl
-                                   bg-white/5 border border-white/10
-                                   hover:bg-white/10 hover:border-white/20
-                                   transition-all hover:scale-105 hover:shadow-lg
-                                   focus:outline-none focus:ring-2 focus:ring-green-500/40"
-                      >
-                        <TikTokIcon className="h-5 w-5 text-white" />
-                        <span className="sr-only">TikTok</span>
-                      </a>
-
-                      <a
-                        href="https://www.youtube.com/@snapfare_ch"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label="YouTube"
-                        title="YouTube"
-                        className="inline-flex h-10 w-10 items-center justify-center rounded-xl
-                                   bg-white/5 border border-white/10
-                                   hover:bg-white/10 hover:border-white/20
-                                   transition-all hover:scale-105 hover:shadow-lg
-                                   focus:outline-none focus:ring-2 focus:ring-green-500/40"
-                      >
-                        <Youtube className="h-5 w-5 text-white" />
-                        <span className="sr-only">YouTube</span>
-                      </a>
+                      {socialLinks.map(({ href, label, Icon }) => (
+                        <a
+                          key={label}
+                          href={href}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          aria-label={label}
+                          title={label}
+                          className="inline-flex h-10 w-10 items-center justify-center rounded-xl
+                                     bg-white/5 border border-white/10
+                                     hover:bg-white/10 hover:border-white/20
+                                     transition-all hover:scale-105 hover:shadow-lg
+                                     focus:outline-none focus:ring-2 focus:ring-green-500/40"
+                        >
+                          <Icon className="h-5 w-5 text-white" />
+                          <span className="sr-only">{label}</span>
+                        </a>
+                      ))}
                     </div>
                   </div>
 

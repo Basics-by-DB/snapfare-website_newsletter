@@ -17,6 +17,7 @@ const Impressum = () => {
                 <div className="text-gray-300 leading-relaxed">
                   <p className="font-semibold">Basics by Dominic Bachmann (Einzelfirma)</p>
                   <p>Dominic Bachmann</p>
+                  <p>Hasenbüelstrasse 3</p>
                   <p>8123 Ebmatingen</p>
                   <p>Schweiz</p>
                 </div>

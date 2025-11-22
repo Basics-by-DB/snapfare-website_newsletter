@@ -142,9 +142,6 @@ const Premium = () => {
                 {/* Zweizeilige Rabattinfo */}
                 <div className="text-gray-400 text-sm leading-tight mb-2">
                   <p>
-                    <span className="line-through">CHF 79</span> – 50% Rabatt auf den Normalpreis
-                  </p>
-                  <p>
                     <span className="line-through">CHF 49</span> – 20% Rabatt auf den Early-Bird-Preis
                   </p>
                 </div>

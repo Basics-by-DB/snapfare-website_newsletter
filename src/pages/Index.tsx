@@ -40,7 +40,7 @@ const Index = () => {
       to: "London",
       airline: "Easyjet",
       airtime: "1h40",
-      travelClass: "Econom",
+      travelClass: "Economy",
       baggage: "Personal Item",
       dates: "Januar-März 2026",
       price: "CHF 54",

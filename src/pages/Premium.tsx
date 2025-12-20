@@ -113,36 +113,36 @@ const Premium = () => {
 
             {/* Premium Plan */}
             <div className="bg-white/5 border-2 border-green-400 rounded-2xl p-8 relative overflow-hidden">
+              
+              {/* Beliebt Badge */}
               <div className="absolute top-4 right-4">
                 <div className="bg-gradient-to-r from-green-500 to-blue-500 text-white px-3 py-1 rounded-full text-sm font-medium flex items-center gap-1">
                   <Star className="w-4 h-4" />
                   Beliebt
                 </div>
               </div>
-              
+            
               <div className="text-center mb-8">
-
-                {/* Black Friday Badge */}
+            
+                {/* Weihnachten Badge */}
                 <div className="flex justify-center mb-2">
                   <span className="bg-green-400 text-black text-xs font-semibold px-3 py-1 rounded-full">
                     Weihnachten 2026
                   </span>
                 </div>
-              
+            
                 <h3 className="text-2xl font-bold mb-2 text-white">Premium</h3>
-              
-                {/* Alte + neue Preise auf EINER Zeile */}
-                <div className="flex justify-center items-end gap-3 mb-2">
-              
-              
-                  {/* Neuer Black-Friday-Preis */}
+            
+                {/* Preis */}
+                <div className="flex flex-col justify-center items-center mb-2">
                   <span className="text-4xl font-bold bg-gradient-to-r from-green-400 to-blue-500 bg-clip-text text-transparent">
                     CHF 49
                   </span>
-                  <p className="text-gray-300">Pro Jahr</p>
+                  <p className="text-gray-300 text-sm">Pro Jahr</p>
                 </div>
-              
+            
               </div>
+            </div>
 
 
               

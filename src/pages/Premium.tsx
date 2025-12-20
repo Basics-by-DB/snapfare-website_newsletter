@@ -139,6 +139,7 @@ const Premium = () => {
                   <span className="text-4xl font-bold bg-gradient-to-r from-green-400 to-blue-500 bg-clip-text text-transparent">
                     CHF 49
                   </span>
+                  <p className="text-gray-300">Pro Jahr</p>
                 </div>
               
               </div>

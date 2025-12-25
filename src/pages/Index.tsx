@@ -10,7 +10,22 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription, Di
 import { toast } from '@/hooks/use-toast';
 import { supabase } from '@/integrations/supabase/client';
 
-useEffect(() => {
+type Deal = {
+  id: string;
+  from: string;
+  to: string;
+  airline: string;
+  airtime: string;
+  travelClass: string;
+  baggage: string;
+  dates: string;
+  price: string;     // z.B. "CHF 430"
+  image: string;
+};
+
+const Index = () => {
+
+  useEffect(() => {
   if (typeof window === 'undefined') return;
 
   !(function (w, d, t) {
@@ -78,21 +93,7 @@ useEffect(() => {
     ttq.page();
   })(window, document, 'ttq');
 }, []);
-
-type Deal = {
-  id: string;
-  from: string;
-  to: string;
-  airline: string;
-  airtime: string;
-  travelClass: string;
-  baggage: string;
-  dates: string;
-  price: string;     // z.B. "CHF 430"
-  image: string;
-};
-
-const Index = () => {
+  
   const [email, setEmail] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [userLocation, setUserLocation] = useState<string>('');

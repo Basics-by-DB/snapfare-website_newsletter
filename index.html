@@ -51,24 +51,25 @@
         bottom: 20px;
         left: 20px;
         width: 320px;
-        background: rgba(2, 6, 23, 0.82);
+        background: rgba(255,255,255,0.10); /* bg-white/10 */
         color: #ffffff;
-        border: 1px solid rgba(255,255,255,0.08);
+        border: 1px solid rgba(255,255,255,0.20); /* border-white/20 */
         border-radius: 14px;
-        padding: 14px 14px 12px 14px;
+        padding: 14px;
         display: none;
         z-index: 9999;
         font-family: Inter, system-ui, sans-serif;
-        backdrop-filter: blur(10px);
-        box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+        backdrop-filter: blur(8px); /* backdrop-blur */
+        -webkit-backdrop-filter: blur(8px);
+        box-shadow: 0 10px 15px rgba(0,0,0,0.25); /* shadow-lg */
       "
     >
-      <!-- Text row -->
+      <!-- Text -->
       <div
         style="
           font-size: 12.5px;
           line-height: 1.5;
-          color: rgba(255,255,255,0.85);
+          color: #ffffff;
           margin-bottom: 12px;
         "
       >
@@ -76,45 +77,46 @@
         (z.&nbsp;B. Reichweitenmessung & Affiliate-Links).
       </div>
     
-      <!-- Button row -->
+      <!-- Buttons -->
       <div style="display: flex; gap: 10px;">
-        <!-- Accept (primary) -->
+        <!-- Accept (primary, slightly stronger like hover state) -->
         <button
           id="cookie-accept"
           style="
             flex: 1;
-            background: rgba(34,100,245,0.9);
+            background: rgba(255,255,255,0.15); /* hover:bg-white/15 */
             color: #ffffff;
-            border: 1px solid rgba(255,255,255,0.12);
+            border: 1px solid rgba(255,255,255,0.30); /* hover:border-white/30 */
             padding: 8px 10px;
-            border-radius: 10px;
+            border-radius: 9999px; /* rounded-full */
             font-size: 12.5px;
             font-weight: 600;
             cursor: pointer;
+            transition: all 0.15s ease;
           "
         >
           Akzeptieren
         </button>
     
-        <!-- Decline (secondary, ghost-style) -->
+        <!-- Decline (normal glass) -->
         <button
           id="cookie-decline"
           style="
             flex: 1;
-            background: rgba(255,255,255,0.06);
-            color: rgba(255,255,255,0.85);
-            border: 1px solid rgba(255,255,255,0.12);
+            background: rgba(255,255,255,0.10); /* bg-white/10 */
+            color: rgba(255,255,255,0.9);
+            border: 1px solid rgba(255,255,255,0.20); /* border-white/20 */
             padding: 8px 10px;
-            border-radius: 10px;
+            border-radius: 9999px; /* rounded-full */
             font-size: 12.5px;
             cursor: pointer;
+            transition: all 0.15s ease;
           "
         >
           Ablehnen
         </button>
       </div>
     </div>
-
 
     <div id="root"></div>
 

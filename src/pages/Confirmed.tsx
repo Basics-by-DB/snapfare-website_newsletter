@@ -19,8 +19,7 @@ const Confirmed = () => {
             </p>
 
             <p className="text-gray-400 text-sm sm:text-base">
-              Die besten Flugdeals sind bereits unterwegs ✈️  
-              Schau in dein Postfach.
+              Die besten Flugdeals warten in deiner Inbox ✈️
             </p>
           </div>
         </div>

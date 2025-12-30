@@ -233,5 +233,37 @@
         });
     </script>
 
+    <script>
+      function loadGoogleAnalytics() {
+        if (window.gtag) return; // prevent double load
+    
+        const s = document.createElement("script");
+        s.async = true;
+        s.src = "https://www.googletagmanager.com/gtag/js?id=G-0G9TKRS60D";
+        document.head.appendChild(s);
+    
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        window.gtag = gtag;
+    
+        gtag("js", new Date());
+        gtag("config", "G-0G9TKRS60D", {
+          anonymize_ip: true
+        });
+      }
+    
+      // Load immediately if already accepted
+      if (localStorage.getItem("tracking_consent") === "granted") {
+        loadGoogleAnalytics();
+      }
+    
+      // Load on accept
+      document
+        .getElementById("cookie-accept")
+        ?.addEventListener("click", () => {
+          loadGoogleAnalytics();
+        });
+    </script>
+    
   </body>
 </html>

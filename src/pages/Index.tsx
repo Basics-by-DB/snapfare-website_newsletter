@@ -218,7 +218,7 @@ const Index = () => {
 
       toast({
         title: 'Erfolgreich angemeldet! 🎉',
-        description: 'Bitte bestätige deine Email, um alle Deals zu erhalten.'
+        description: 'Bitte bestätige deine Email, um alle Deals zu erhalten!'
       });
 
       setEmail('');

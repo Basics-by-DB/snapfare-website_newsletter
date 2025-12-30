@@ -144,7 +144,6 @@ const Index = () => {
           }
         );
         
-        alert('Confirm POST status: ' + res.status);
         
       } catch (error) {
         console.error('Confirmation email error (non-blocking):', error);

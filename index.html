@@ -50,65 +50,65 @@
         position: fixed;
         bottom: 20px;
         left: 20px;
-        right: 20px;
-        max-width: 900px;
-        margin: 0 auto;
+        width: 320px;
         background: #020617;
         color: #e5e7eb;
         border: 1px solid #111827;
         border-radius: 14px;
-        padding: 16px 18px;
+        padding: 14px 14px 12px 14px;
         display: none;
         z-index: 9999;
         font-family: Inter, system-ui, sans-serif;
+        box-shadow: 0 8px 24px rgba(0,0,0,0.35);
       "
     >
+      <!-- Text row -->
       <div
         style="
-          display: flex;
-          flex-wrap: wrap;
-          gap: 12px;
-          align-items: center;
-          justify-content: space-between;
+          font-size: 12.5px;
+          line-height: 1.5;
+          color: #cbd5f5;
+          margin-bottom: 12px;
         "
       >
-        <div style="font-size: 13px; line-height: 1.5; color: #cbd5f5;">
-          Wir verwenden Cookies für Marketing & Tracking (z. B. Reichweitenmessung
-          und Affiliate-Links). Du kannst zustimmen oder ablehnen.
-        </div>
-
-        <div style="display: flex; gap: 10px;">
-          <button
-            id="cookie-decline"
-            style="
-              background: #020617;
-              color: #cbd5f5;
-              border: 1px solid #1f2937;
-              padding: 8px 14px;
-              border-radius: 10px;
-              font-size: 13px;
-              cursor: pointer;
-            "
-          >
-            Ablehnen
-          </button>
-
-          <button
-            id="cookie-accept"
-            style="
-              background: #2264f5;
-              color: #ffffff;
-              border: none;
-              padding: 8px 14px;
-              border-radius: 10px;
-              font-size: 13px;
-              font-weight: 600;
-              cursor: pointer;
-            "
-          >
-            Akzeptieren
-          </button>
-        </div>
+        Wir verwenden Cookies für Marketing & Tracking (z.&nbsp;B. Reichweitenmessung
+        und Affiliate-Links).
+      </div>
+    
+      <!-- Button row -->
+      <div style="display: flex; gap: 10px;">
+        <button
+          id="cookie-accept"
+          style="
+            flex: 1;
+            background: #2264f5;
+            color: #ffffff;
+            border: none;
+            padding: 8px 10px;
+            border-radius: 10px;
+            font-size: 12.5px;
+            font-weight: 600;
+            cursor: pointer;
+          "
+        >
+          Akzeptieren
+        </button>
+    
+        <button
+          id="cookie-decline"
+          style="
+            flex: 1;
+            background: #020617;
+            color: #cbd5f5;
+            border: 1px solid #1f2937;
+            padding: 8px 10px;
+            border-radius: 10px;
+            font-size: 12.5px;
+            cursor: pointer;
+          "
+        >
+          Ablehnen
+        </button>
       </div>
     </div>
 

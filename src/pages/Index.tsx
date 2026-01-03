@@ -76,20 +76,29 @@ const Index = () => {
     },
   ];
 
-  useEffect(() => {
-    const getUserLocation = async () => {
-      try {
-        const response = await fetch('https://ipapi.co/json/');
-        const data = await response.json();
-        setUserLocation(`${data.city}, ${data.country_name}`);
-      } catch (error) {
-        console.log('Could not get location:', error);
-        setUserLocation('Unknown');
-      }
-    };
+useEffect(() => {
+  // 1️⃣ Capture UTM source once
+  const params = new URLSearchParams(window.location.search);
+  const utmSource = params.get("utm_source");
 
-    getUserLocation();
-  }, []);
+  if (utmSource) {
+    sessionStorage.setItem("utm_source", utmSource.toLowerCase());
+  }
+
+  // 2️⃣ Existing location logic (unchanged)
+  const getUserLocation = async () => {
+    try {
+      const response = await fetch('https://ipapi.co/json/');
+      const data = await response.json();
+      setUserLocation(`${data.city}, ${data.country_name}`);
+    } catch (error) {
+      console.log('Could not get location:', error);
+      setUserLocation('Unknown');
+    }
+  };
+
+  getUserLocation();
+}, []);
 
   const openDealModal = (deal: Deal) => {
     setSelectedDeal(deal);
@@ -114,6 +123,7 @@ const Index = () => {
           ? `${selectedDeal.from} → ${selectedDeal.to} (${selectedDeal.airline}) – ${selectedDeal.price}`
           : null;
 
+      const utm_source = sessionStorage.getItem("utm_source") ?? "direct";
       const { error } = await supabase
         .from('waitlist')
         .insert([

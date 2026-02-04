@@ -36,43 +36,43 @@ const Index = () => {
   // Deals
   const deals: Deal[] = [
     {
-      id: "PMI",
+      id: "KRK",
       from: "Zürich",
-      to: "Mallorca",
-      airline: "Swiss/Easyjet/Vueling",
-      airtime: "2 Stunden",
-      travelClass: "Economy",
-      baggage: "8 kg",
-      dates: "Januar - Juni 2026",
-      price: "CHF 45",
-      image:
-        "https://images.unsplash.com/photo-1617532408070-369f42b448b0?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWFsbG9yY2F8ZW58MHx8MHx8fDA%3D=",
-    },
-    {
-      id: "BKK",
-      from: "Zürich",
-      to: "Bangkok",
-      airline: "Etihad Airlines",
-      airtime: "17 Stunden",
-      travelClass: "Economy",
-      baggage: "7 + 25 kg",
-      dates: "Januar - Juni 2026",
-      price: "CHF 450",
-      image:
-        "https://media.istockphoto.com/id/507913346/photo/wat-arun-temple-at-sunset-in-bangkok-thailand.jpg?b=1&s=170667a&w=0&k=20&c=hR5cKxxJFl_iI-ah9NAf27Re-lMvD9nx4NOGAJFWw_s=",
-    },
-    {
-      id: "BER",
-      from: "Zürich",
-      to: "Berlin",
-      airline: "Easyjet",
+      to: "Krakau",
+      airline: "Wizzair/Easyjet",
       airtime: "1.5 Stunden",
       travelClass: "Economy",
       baggage: "Personal Item",
-      dates: "Januar - Juni 2026",
-      price: "CHF 70",
+      dates: "Februar, März, und Juni 2026",
+      price: "CHF 21",
       image:
-        "https://media.istockphoto.com/photos/berlin-skyline-at-night-picture-id479005779?b=1&k=20&m=479005779&s=170667a&w=0&h=0UzVJFBANUvxaI1Qhb02NHQ39xqBhtb9vA4Udq2nHH0=",
+        "https://media.istockphoto.com/photos/krakow-poland-medieval-ryenek-square-cloth-hall-and-cathedral-picture-id1402237972?b=1&k=20&m=1402237972&s=170667a&w=0&h=hqJtf4e6bXCta-GHCaXk734u9ib8E4Mujcc3Vr1NwIQ=",
+    },
+    {
+      id: "PRN",
+      from: "Zürich",
+      to: "Pristina",
+      airline: "Easyjet",
+      airtime: "2 Stunden",
+      travelClass: "Economy",
+      baggage: "Personal Item",
+      dates: "Februar, März, und Juni 2026",
+      price: "CHF 50",
+      image:
+        "https://images.unsplash.com/photo-1725274962074-92e73459f96f?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    },
+    {
+      id: "YUL",
+      from: "Zürich",
+      to: "Montreal",
+      airline: "Swiss",
+      airtime: "8 Stunden",
+      travelClass: "Economy",
+      baggage: "8 + 23 kg",
+      dates: "Februar - November 2026",
+      price: "CHF 430",
+      image:
+        "https://media.istockphoto.com/photos/skyline-downtown-montreal-canada-picture-id1332557931?b=1&k=20&m=1332557931&s=170667a&w=0&h=-9CrAfg_I5gwTlkIF8_duHh6F3rQwG-v_qaxOG5QC0E=",
     },
   ];
 

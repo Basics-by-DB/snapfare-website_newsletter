@@ -182,7 +182,7 @@ useEffect(() => {
     {
       icon: <Clock className="w-8 h-8" />,
       title: 'Wunschdeal festlegen',
-      description: 'Teile SnapFare mit, wonach du suchst. Du kannst Ziele, Budget oder Reisezeitraum angeben – in 30 Sekunden erledigt.'
+      description: 'Teile SnapFare mit, wonach du suchst – in 30 Sekunden erledigt.'
     },
     {
       icon: <Bell className="w-8 h-8" />,
@@ -369,7 +369,7 @@ useEffect(() => {
               <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-12 sm:mb-16 lg:mb-20">
                   <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4 sm:mb-6 px-4">
-                    SnapFare findet automatisch die besten <span className="text-green-400">Angebote</span> für dich
+                    SnapFare findet automatisch die besten <span className="text-green-400">Angebote</span>
                   </h2>
                 </div>
 
@@ -403,7 +403,7 @@ useEffect(() => {
                     <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-r from-green-500 to-green-600 rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6">
                       <span className="text-white font-bold text-lg sm:text-xl">1</span>
                     </div>
-                    <h3 className="text-lg sm:text-xl font-semibold text-white mb-3 sm:mb-4">Spare Hunderte Franken pro Jahr</h3>
+                    <h3 className="text-lg sm:text-xl font-semibold text-white mb-3 sm:mb-4">Spare gutes Geld</h3>
                     <p className="text-sm sm:text-base text-gray-300">Die besten Flugpreise sind oft nur kurz verfügbar. SnapFare erkennt sie sofort – bevor sie wieder verschwinden.</p>
                   </div>
 
@@ -411,7 +411,7 @@ useEffect(() => {
                     <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6">
                       <span className="text-white font-bold text-lg sm:text-xl">2</span>
                     </div>
-                    <h3 className="text-lg sm:text-xl font-semibold text-white mb-3 sm:mb-4">Keine endlosen Preisvergleiche mehr</h3>
+                    <h3 className="text-lg sm:text-xl font-semibold text-white mb-3 sm:mb-4">Keine endlosen Preisvergleiche</h3>
                     <p className="text-sm sm:text-base text-gray-300">Vergiss 10 Tabs und stundenlanges Suchen. SnapFare übernimmt die Recherche für dich.</p>
                   </div>
 
@@ -419,7 +419,7 @@ useEffect(() => {
                     <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-r from-purple-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6">
                       <span className="text-white font-bold text-lg sm:text-xl">3</span>
                     </div>
-                    <h3 className="text-lg sm:text-xl font-semibold text-white mb-3 sm:mb-4">Nur relevante Deals – kein Spam</h3>
+                    <h3 className="text-lg sm:text-xl font-semibold text-white mb-3 sm:mb-4">Nur relevante Deals</h3>
                     <p className="text-sm sm:text-base text-gray-300">Du bekommst nur Angebote, die wirklich gut sind. Kein Newsletter-Müll.</p>
                   </div>
 
